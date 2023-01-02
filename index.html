@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    </head>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styleboot.css">
+<body>
+    
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Eighth navbar example">
+    <div class="container">
+      <a class="navbar-brand" href="#">VIBGYOR QUANTO!</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExample07">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="Size.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="indexred.html">Action</a></li>
+              <li><a class="dropdown-item" href="indexblue.html">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="hero-image">
+  <div class="hero-text">
+    <h1>VIBGYOR QUANTO!</h1>
+    <p>Choose the Best for your Art</p>
+    <button>Join Us</button>
+  </div>
+</div>
+
+<form>
+  <input type="text" name="search" placeholder="Search..">
+  </form>
+<hr>
+
+
+
+<script type="text/javascript" src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"crossorigin="anonymous" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
+</html>
+<!--function multiply(a, b){
+    if (a > 10 || b > 10) {
+        return "Its difficult >_<";
+    } else {
+        return a * b;
+    }
+    } 
+multiply(5, 10);
+
+function multiply(a, b){
+    return a*b;
+}
+alert(multiply(3,4));-->
+
+<!--function checkDriverAge(age) {
+    if (Number(age) < 18) {
+        return "Sorry, you are too yound to drive this car. Powering off";
+    } else if (Number(age) > 18) {
+        return "Powering On. Enjoy the ride!";
+    } else if (Number(age) === 18) {
+        return "Congratulations on your first year of driving. Enjoy the ride!";
+    }
+}
+_________________________________________________________________________
+var array = ["Banana", "Apples", "Oranges", "Blueberries"];
+undefined
+array.shift();
+'Banana'
+array
+(3) ['Apples', 'Oranges', 'Blueberries']0: "Apples"1: "Oranges"2: "Blueberries"length: 3[[Prototype]]: Array(0)
+array.sort();
+(3) ['Apples', 'Blueberries', 'Oranges']0: "Apples"1: "Blueberries"2: "Oranges"length: 3[[Prototype]]: Array(0)
+array.push('Kiwi');
+4
+array
+(4) ['Apples', 'Blueberries', 'Oranges', 'Kiwi']
+array.shift(); should be slice
+'Apples'
+array
+(3) ['Blueberries', 'Oranges', 'Kiwi']
+array.reverse();
+(3) ['Kiwi', 'Oranges', 'Blueberries'] 
+
+array2[1]
+(3) ['Apples', Array(1), 'Blueberries']0: "Apples"1: Array(1)0: "Oranges"length: 1[[Prototype]]: Array(0)2: "Blueberries"length: 3[[Prototype]]: Array(0)
+array2[1][1]
+['Oranges']0: "Oranges"length: 1[[Prototype]]: Array(0)
+array2[1][1][0]
+'Oranges'
+_________________________________________________________________________
+car
+function checkDriverAge(age){
+    if (Number(age) === 18){
+        alert("Congratulations on your first year of driving. Enjoy the ride!");
+    } else if (Number(age) < 18){
+        alert("Sorry, you are too yound to drive this car. Powering off");
+    } else if (Number(age) > 18){
+        alert("Powering On. Enjoy the ride!");
+    }
+}
+checkDriverAge();
+
+function checkDriverAge2(age){
+    if (Number(age) === 18){
+        return "Congratulations on your first year of driving. Enjoy the ride!";
+    } else if (Number(age) < 18){
+        return "Sorry, you are too yound to drive this car. Powering off";
+    } else if (Number(age) > 18){
+        return "Powering On. Enjoy the ride!";
+    }
+}
+checkDriverAge2()
+_________________________________________________________________________
+Mini Facebook
+var database = [
+    {
+        username: "Ann",
+        password: "Author234"
+    }
+];
+
+var newsFeed = [
+    {
+        username: "Sully",
+    timeline: "Keep calm and program!"
+
+    },
+    {
+        username: "Nancy",
+    timeline: "To Hogwarts!, EXPETRO PATRONUM!"
+    
+    }
+];
+
+var userNamePrompt = prompt("What's your username?");
+var passwordPrompt = prompt("What's your password?");
+
+function signIn(user, pass) {
+    if (user === database[0].username && pass === database[0].password) {
+        console.log(newsFeed);
+    } else {
+        alert("Sorry, incorrect username and password. Please try again...");
+    }
+}
+
+signIn(userNamePrompt, passwordPrompt);
+
+Second_________________________________________________________________
+var database = [
+   {
+        username: "ann",
+        password: "234"
+    },
+    {
+        username: "ian",
+        password: "123"
+    }
+];
+
+var newsfeed = [
+{
+    username: "Sully",
+    timeline: "Keep calm and program!"
+
+    },
+    {
+        username: "Nancy",
+    timeline: "To Hogwarts!, EXPETRO PATRONUM!"
+}
+];
+function isUserValid(username, password){
+    for (var i=0; i < database.length; i++) {
+        if(database[i].username === username && database[i].password === password) {
+            return true;
+        } 
+    }
+    return false;
+}
+
+function signIn(username, password) {
+    if (isUserValid(username, password)) {
+        console.log(newsfeed);
+    } else {
+        alert("Sorry, incorrect username and password. Please try again...")
+    }
+}
+
+var userNamePrompt = prompt("Enter Username");
+var passwordPrompt = prompt("Enter Password");
+
+signIn(userNamePrompt, passwordPrompt);
+
+_______________________________________________________________________
+books
+var books = [
+    "Harry Potter",
+    "Sherlock Holmes",
+    "Goosebumps",
+    "Nancy Drew",
+    "War n Peace"
+];
+
+var booksImportant = [
+    "Harry Potter!",
+    "Sherlock Holmes!",
+    "Goosebumps!",
+    "Nancy Drew!",
+    "War n Peace!"
+];
+
+var booksLength = books.length;
+//for (var i=0; i < booksLength; i++) {
+//  console.log(books[i], i);
+//}
+
+function logbooks(books, i) {
+    console.log(books, i);
+}
+
+books.forEach(logbooks);
+booksImportant.forEach(logbooks)
+
+//var counterOne = 10;
+//while (counterOne > 0) {
+//  console.log(counterOne);
+//  counterOne--
+//} 
+
+//var counterTwo = 10
+//do {
+//  console.log(counterTwo);
+//  counterTwo--;
+//} while (counterTwo > 0);
+_______________________________________________________________________
+button 
+
+var button = document.getElementById("enter");
+var input = document.getElementById("userinput");
+var ul = document.querySelector("ul");
+
+function inputLength() {
+    return input.value.length;
+}
+
+function createListElement() {
+    var li = document.createElement("li");
+    li.appendChild(document.createTextNode(input.value));
+    ul.appendChild(li);
+    input.value = "";
+}
+
+function addListAfterClick() {
+    if (inputLength() > 0) {
+    createListElement();
+}
+}
+function addListAfterKeypress(event) {
+    if (inputLength() > 0 && event.keyCode === 13) {
+    createListElement();
+}
+}
+
+button.addEventListener("click", addListAfterClick);
+
+input.addEventListener("keydown", addListAfterKeypress);
+___________________________________________________________________________Background
+var css = document.querySelector("h3");
+var color1 = document.querySelector(".color1");
+var color2 = document.querySelector(".color2");
+var body = document.getElementById("gradient");
+
+function applyGradient() {
+    body.style.background = "linear-gradient(to right, " 
+    + color1.value 
+    + ", " 
+    + color2.value 
+    + ")";
+
+    css.textContent = body.style.background + ";" ;
+}
+
+//color1.addEventListener("input", applyGradient);
+//color2.addEventListener("input", applyGradient); 
+
+   <input oninput="applyGradient()" class= "color1 "type="color" name="color1" value="#00ff00">
+<input oninput="applyGradient()" class="color2" type="color" name="color2" value="#ff0000">
+_______________________________________________________________________
+game
+function move(arrow) {
+    var scene;
+    switch (arrow){
+    case "front":
+        scene = "DEADEND!";
+        break;
+    case "back":
+        scene = "HOME";
+        break;
+    case "right":
+        scene = "FOREST";
+        break;
+    case "left":
+        scene = "WINDIGO!";
+        break;
+    default:
+        scene = "enter valid arrow";
+    }
+    return scene;
+}
+_______________________________________________________________________
+//function uservalid(bool){
+//    return bool;
+//}
+//var ans = uservalid(true) ? "you may enter" : "access denied"
+//var answer = "your account is " + (uservalid(false) ? "123" : "unavailable");
+//function con() {
+//    if (uservalid(true)) {
+//        return "welcome";
+ //   }else {
+ //       return "denied";
+//    }
+//}
+_______________________________________________________________________
+arrow functions
+const add = (a, b) => a + b;
+_______________________________________________________________________
+symbol...
+let no1 = Symbol();
+let no2 = Symbol('add');
+let no3 = Symbol('sub');
+_______________________________________________________________________destructuring...
+const person = {
+    firstName : "John",
+    lastName  : "Doe",
+    age       : 50,
+    eyeColor  : "blue"
+};
+
+const {firstName, lastName}  = person;
+let {age, eyeColor} = person;
+
+_______________________________________________________________________
+let + const------
+const a = 'test';
+let b = true;
+let c = 100;
+
+if (c > 90){
+    let b = false;
+    console.log('inside', b)
+}
+console.log('outside', b)
+_______________________________________________________________________
+template strings--------
+const firstName = 'sully';
+const city = 'NYC';
+const message = "Hello " + firstName + " have I met you before? I think we met in " + city + " last summer no???";
+undefined
+message
+'Hello sully have I met you before? I think we met in NYC last summer no???'
+
+second------
+const firstName = 'sully';
+const city = 'NYC';
+const message = `Hello  ${firstName}  have I met you before? I think we met in  ${city} last summer no???`;
+_______________________________________________________________________
+closure
+const add = x => y => x + y
+var addTen = add(10);
+addTen(3);
+_______________________________________________________________________
+currying
+const sum = (a, b) => a + b;
+const addSum = (a) => (b) => a + b;
+const flsum = addSum(60);
+flsum(30);
+_______________________________________________________________________
+compose
+const compose = (f, g) => (a) => f(g(a));
+const add1 = (num) => num + 1;
+const add5 = (num) => num + 5;
+compose(add1, add5)(10)
+________________________________________________________________________
+const list = [1, 2, 6, 8];
+const bytwo = []
+const nlist = list.forEach(num => {
+    bytwo.push(num + 2);
+}); 
+console.log(bytwo);
+
+//map
+
+const tmap = list.map(num => num + 2);
+console.log('map', tmap );
+
+//filter
+
+const tfilter = list.filter(num => num > 5)
+console.log('filter', tfilter);
+
+//reduce
+
+const treduce = list.reduce((accumulator, num) => {
+    return accumulator + num
+},5);
+console.log('reduce', treduce);
+
+
+
